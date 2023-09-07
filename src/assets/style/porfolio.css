@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: #4d6050;
+    background-color: #c9c7c1;
+    
 }
 #header {
     font-family: 'Montserrat', sans-serif;
@@ -29,22 +30,68 @@ body {
 }
 
 
+
+
 /* Estilo para a imagem em diagonal */
 .diagonal-image {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/src/images/maefoto3.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
-    background-size: cover;
-    transform: skewY(-8deg); /* Inclinação diagonal para a imagem */
-    transform-origin: bottom left; /* Origem da transformação na parte inferior esquerda */
-    z-index: -5 ; /* Coloca a imagem atrás do conteúdo */
+    left: 5%; /* Ajuste para posicionar a imagem mais para a direita */
+    width: 100%; /* Ajuste para cobrir toda a largura */
+    height: 100%;   
+    background-image: url('/src/images/GS6A1971.jpg');
+    background-size: cover; 
+    z-index: -1; 
+    filter: blur(3px);
 }
 
-
-
+button {
+    background-color: #302f2f;
+    border: none;
+    padding: 5px;
+    position: relative;
+    width: 6.2em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+  }
+  
+  button p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.15em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #ffffff;
+  }
+  
+  button svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+  }
+  
+  button:hover p {
+    left: 0.5em;
+    color: #fff
+  }
+  
+  button:hover svg {
+    opacity: 1;
+  }
+  
+  button:hover {
+    background-color: #25D366;
+  }
+  
 
 #info {
     display: flex;
@@ -63,24 +110,9 @@ body {
     transform: scale(1.1);
 }
 
-#talk a{
-    padding: 15px;
-    width: 115px;
-    border: none;
-    border-radius: 33px;
-    background-color: black;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
 
 
 
-
-#talk a:hover {
-    transform: scale(1.07);
-}
 
 main {
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
@@ -90,7 +122,7 @@ main {
 #mid {
     font-family: 'Raleway', sans-serif;
     display: flex;
-    gap: 14rem;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     padding-top: 130px;
@@ -98,6 +130,7 @@ main {
     padding-bottom: 150px;
     font-size: 30px;
 }
+
 
 #mid strong {
     color: #909090;
@@ -118,6 +151,7 @@ main {
 
 #secondText p {
     font-size: 22px;
+    color: rgb(85, 83, 83);
 }
 
 #thirdRow {
@@ -569,18 +603,7 @@ footer p {
         gap: 5rem;
     }
     
-    #talk a {
-        padding: 12px;
-        width: 100px;
-        border: none;
-        border-radius: 33px;
-        background-color: black;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        transition: 0.3s;
-    }
-    
+
     
     #info a:hover {
         transform: scale(1.07);
