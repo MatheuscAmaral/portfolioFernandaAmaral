@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #fcfbf1;
+    background-color: #4d6050;
 }
 #header {
     font-family: 'Montserrat', sans-serif;
@@ -20,6 +20,29 @@ body {
 #header img {
     margin-left: 170px;
 }
+
+/* Defina o estilo para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+
+/* Estilo para a imagem em diagonal */
+.diagonal-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/images/maefoto3.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover;
+    transform: skewY(-8deg); /* Inclinação diagonal para a imagem */
+    transform-origin: bottom left; /* Origem da transformação na parte inferior esquerda */
+    z-index: -5 ; /* Coloca a imagem atrás do conteúdo */
+}
+
 
 
 
@@ -61,6 +84,7 @@ body {
 
 main {
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 #mid {
@@ -105,7 +129,7 @@ main {
 #icons {
     display: flex;
     gap: 2rem;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 #icons a {
