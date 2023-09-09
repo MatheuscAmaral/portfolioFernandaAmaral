@@ -7,14 +7,15 @@
 }
 
 body {
-    background-color: #c9c7c1;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c4c9c6;
     
 }
+
 #header {
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 0px;
 }
 
 
@@ -22,12 +23,79 @@ body {
     margin-left: 170px;
 }
 
-/* Defina o estilo para o corpo da página */
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Impede a barra de rolagem horizontal */
+#aboutMe {
+    margin-top: 10px;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    padding: 100px;
+    backdrop-filter: blur(10px); 
 }
+
+
+  
+  #content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(189, 187, 187, 0.8); /* Cor de fundo do conteúdo com transparência */
+  }
+  
+
+
+#picture img {
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+#picture img:hover {
+    transform: scale(1.07);
+}
+
+#aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+#aboutText a {
+    padding: 15px;
+    box-shadow: 0px 0px 3px 0px black;
+    border: none;
+    background-color: rgb(51, 55, 52);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#aboutText a:hover {
+    transform: scale(1.07);
+}
+
+#content img {
+    width: 86px;
+}
+
+#content a {
+    background-color: #969494;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Defina o estilo para o corpo da página */
+
 
 
 
@@ -37,7 +105,7 @@ body {
     position: absolute;
     top: 0;
     left: 5%; /* Ajuste para posicionar a imagem mais para a direita */
-    width: 100%; /* Ajuste para cobrir toda a largura */
+    width: 94%; /* Ajuste para cobrir toda a largura */
     height: 100%;   
     background-image: url('/src/images/GS6A1971.jpg');
     background-size: cover; 
@@ -45,7 +113,9 @@ body {
     filter: blur(3px);
 }
 
-button {
+
+
+#buttonn {
     background-color: #302f2f;
     border: none;
     padding: 5px;
@@ -57,7 +127,7 @@ button {
     border-radius: 0.4em;
   }
   
-  button p {
+  #buttonn p {
     position: absolute;
     top: 0.4em;
     left: 1.15em;
@@ -67,7 +137,7 @@ button {
     color: #ffffff;
   }
   
-  button svg {
+  #buttonn svg {
     position: absolute;
     top: 0.45em;
     right: 0.5em;
@@ -79,16 +149,16 @@ button {
     fill: #fff
   }
   
-  button:hover p {
+  #buttonn:hover p {
     left: 0.5em;
     color: #fff
   }
   
-  button:hover svg {
+  #buttonn:hover svg {
     opacity: 1;
   }
   
-  button:hover {
+  #buttonn:hover {
     background-color: #25D366;
   }
   
@@ -103,13 +173,15 @@ button {
 #info a {
     text-decoration: none;
     color: black;
-    transition: 0.4s;
 }
 
-#info a:hover {
+#info strong {
+    transition: 0.3s;
+}
+
+#info strong:hover {
     transform: scale(1.1);
 }
-
 
 
 
@@ -124,10 +196,10 @@ main {
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: center;
+    margin-left: 215px;
     padding-top: 130px;
     padding-left: 10px;
-    padding-bottom: 150px;
+    padding-bottom: 300px;
     font-size: 30px;
 }
 
@@ -168,7 +240,7 @@ main {
 
 #icons a {
     padding: 15px;
-    background-color: #ddf0cc;
+    background-color: #cbcfc8;
     border-radius: 5px;
     transition: 0.4s;
 }
@@ -177,170 +249,9 @@ main {
     transform: scale(1.1);
 }
 
-#aboutMe {
-    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
-    padding-top: 280px;
-    padding-bottom: 350px;
-    padding-left: 100px;
-    display: flex;
-    gap: 10rem;
-}
 
-#aboutMe img {
-    width: 650px;
-}
+  
 
-#aboutText {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    margin-left: 230px;
-}
-
-.titles {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    text-align: center;
-}
-
-#content p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
-
-#skills {
-    padding-bottom: 350px;
-    padding-top: 200px;
-    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
-}
-
-#usingNow {
-    display: flex;
-    flex-direction: column;
-    gap: 7rem;
-    margin-top: 100px;
-    margin-left: 600px;
-}
-
-#usingNow strong {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
-}
-
-#iconsSkills {
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
-    margin-left: 140px;
-}
-
-#icons1 i {
-    width: 180px;
-    font-size: 100px;
-    transition: 0.4s;
-}
-
-#icons1 i:hover {
-    transform: scale(1.07);
-}
-
-#icons2 i {
-    width: 180px;
-    font-size: 100px;
-    transition: 0.4s;
-}
-
-#icons2 i:hover {
-    transform: scale(1.07);
-}
-
-#projects {
-    padding-top: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
-    padding-bottom: 100px;
-}
-
-#cards {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-}
-
-#card img {
-    width: 450px;
-    border-radius: 16px;
-    transition: 0.4s;
-}
-
-#card img:hover {
-    transform: scale(1.07);
-}
-
-#button {
-    font-family: 'Montserrat', sans-serif;
-    padding: 15px;
-    width: 115px;
-    border: none;
-    border-radius: 33px;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    transition: 0.4s;
-    margin-left: 865px;
-}
-
-
-#button:hover {
-    transform: scale(1.07);
-}
-
-
-footer {
-    font-family: 'Montserrat', sans-serif;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding-bottom: 70px;
-    font-size: 14px;
-}
-
-#backTop {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 50px;
-}
-
-#backTop img {
-    width: 15px;
-}
-
-#backTop a {
-    text-decoration: none;
-    color: white;
-}
-
-#iconsFooter {
-    display: flex;
-    gap: 1rem;
-}
-
-footer p {
-    color: white;
-    
-}
 
 
 @media (max-width: 500px) {
@@ -364,18 +275,31 @@ footer p {
         margin-left: 22px;
         
     }
-    
-    #talk a {
-        padding: 10px;
-        width: 10px;
-        border: none;
-        border-radius: 33px;
-        background-color: black;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        transition: 0.3s;
+
+    #info img {
+        width: 160px;
     }
+    
+    button {
+        display: flex;
+        background-color: #302f2f;
+        border: none;
+        width: 16em;
+        height: 3em;
+        transition: 0.5s;
+        font-size: 13px;
+        border-radius: 0.4em;
+      }
+      
+      button p {
+        top: 0.85em;
+        left: 1.15em;
+        margin: 0;
+        padding: 0;
+        transition: .5s;
+        color: #ffffff;
+      }
+
     
     
     #info a:hover {
@@ -386,18 +310,49 @@ footer p {
     main {
         box-shadow: 1 0px 10px rgba(0, 0, 0, 0.2);
     }
+
+    #info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        margin-right: 0px;
+    }
+    
+    #info a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #info strong {
+        transition: 0.3s;
+    }
+    
+    #info strong:hover {
+        transform: scale(1.1);
+    }
+
+    
+    #header img {
+        margin-left: 0px;
+    }
     
     #mid {
         font-family: 'Raleway', sans-serif;
         display: flex;
         flex-direction: column;
+        color: rgb(0, 0, 0);
         gap: 5rem;
         align-items: center;
-        justify-content: center;
-        padding-top: 70px;
+        margin-left: 0px;
+        padding-top: 0px;
         padding-left: 10px;
-        padding-bottom: 200px;
-        font-size: 20px;
+        padding-bottom: 250px;
+        font-size: 17px;
+    }
+
+    #mid button {
+        margin-left: 95px;
     }
 
     #mid img {
@@ -443,7 +398,7 @@ footer p {
     
     #icons a {
         padding: 15px;
-        background-color: #b9b9b9;
+        background-color: #343434;
         border-radius: 5px;
         transition: 0.4s;
     }
@@ -451,137 +406,77 @@ footer p {
     #icons a:hover {
         transform: scale(1.1);
     }
-    
-    #aboutMe {
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-        padding-top: 200px;
-        padding-bottom: 200px;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 5rem;
-    }
-    
-    #aboutMe img {
-        width: 300px;
-    }
-    
-    #aboutText {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    .title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        margin-left: 80px;
-    }
-    
-    .titles {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        text-align: center;
-    }
-    
-    #content p {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 12px;
-    }
-    
-    #skills {
-        padding-bottom: 150px;
-        padding-top: 150px;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    }
-    
-    #usingNow {
-        display: flex;
-        flex-direction: column;
-        gap: 7rem;
-        margin-top: 100px;
-        margin-left: 0px;
-    }
-    
-    #iconsSkills {
-        display: flex;
-        flex-direction: column;
-        gap: 5rem;
-       margin-left: 100px;
-    }
-    
-    #icons1 i {
-        width: 70px;
-        font-size: 50px;
-    }
 
 
-    #icons2 i {
-        width: 70px;
-        font-size: 50px;
-    }
-    
-    #projects {
-        padding-top: 100px;
-        padding-bottom:100px;
-        display: flex;
-        flex-direction: column;
-        gap: 5rem;
-    }
-    
-    #cards {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #card img {
-        width: 340px;
-        border-radius: 16px;
-        transition: 0.4s;
-    }
-
-    #card img:hover {
-        transform: scale(1.07);
-    }
-
-    
-    #button {
-        font-family: 'Montserrat', sans-serif;
-        padding: 10px;
-        width: 115px;
-        border: none;
-        border-radius: 33px;
-        background-color: rgb(0, 0, 0);
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        margin-left: 130px;
-    }
-
-    #bMobile {
-        padding: 15px;
-        background-color: #909090;
-        width: 130px;
-        height: 1000px;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    #bMobile a {
-        text-decoration: none;
-        color: black;
-    }
 
     #mobile button {
         padding: 20px;
         border: none;
         border-radius: 8px;
         background-color: #c2bcbc;
-    }   
+    } 
+    
+    .diagonal-image {
+        position: absolute;
+        top: 0;
+        left: -55%; /* Ajuste para posicionar a imagem mais para a direita */
+        width: 200%; /* Ajuste para cobrir toda a largura */
+        height: 90%;   
+        background-image: url('/src/images/GS6A1971.jpg');
+        background-size: contain; 
+        z-index: -1; 
+        filter: blur(3px);
+    }
+
+
+    
+
+      #secondText p {
+        color: rgb(234, 234, 234);
+      }
+      
+
+      #consults {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      #consults button {
+            padding: 12px;
+            font-size: 14px;
+            text-decoration: none;
+            margin-left: 0px;
+      }
+
+      #aboutMe {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: none;
+        padding: 100px;
+        backdrop-filter: blur(10px); 
+        font-size: 15px;
+    }
+
+    #picture img {
+        width: 290px;
+    }
+    
+    
+      
+      #content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(189, 187, 187, 0.8); /* Cor de fundo do conteúdo com transparência */
+      }
+      
+    
 }
 
 @media (min-width: 900px) and (max-width: 1500px) {
@@ -616,12 +511,12 @@ footer p {
     #mid {
         font-family: 'Raleway', sans-serif;
         display: flex;
-        gap: 12rem;
+        gap: 7rem;
         align-items: center;
-        justify-content: center;
-        padding-top: 110px;
-        padding-left: 10px;
-        padding-bottom: 150px;
+        margin-left: 140px;
+        padding-top: 70px;
+        padding-left: 0px;
+        padding-bottom: 190px;
         font-size: 20px;
     }
 
@@ -659,7 +554,7 @@ footer p {
     #icons {
         display: flex;
         gap: 2rem;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     
     #icons a {
@@ -672,38 +567,7 @@ footer p {
     #icons a:hover {
         transform: scale(1.1);
     }
-    
-    #aboutMe {
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-        padding-top: 150px;
-        padding-bottom: 200px;
-        padding-left: 100px;
-        display: flex;
-        gap: 10rem;
-    }
-    
-    #aboutMe img {
-        width: 450px;
-    }
-    
-    #aboutText {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    .title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        margin-left: 200px;
-    }
-    
-    .titles {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        text-align: center;
-    }
-    
+
     #content p {
         font-family: 'Montserrat', sans-serif;
         font-size: 12px;
@@ -779,4 +643,13 @@ footer p {
         margin-left: 620px;
     }
 
+    #thirdRow {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #header img {
+        margin-left: 100px;
+    }
 }
