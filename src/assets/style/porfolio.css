@@ -655,9 +655,9 @@ main {
     }
 
     #aboutMe {
-        margin-top: 10px;
+        margin-top: 0px;
         display: flex;
-        gap: 10rem;
+        gap: 3rem;
         justify-content: center;
         padding: 200px;
         backdrop-filter: blur(10px); 
