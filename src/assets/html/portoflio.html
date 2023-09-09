@@ -56,10 +56,10 @@
         <div class="content"></div>
         <div id="aboutText">
             <div class="title">
-                <strong><h2>Quem é a profissional Nutri Fernanda Amaral?</h2></strong>
+                <strong><h2>Quem é a profissional<br> Nutri Fernanda Amaral?</h2></strong>
             </div>
-            <div id="content">
-                <span>Nutri Fernanda Amaral é graduada em Nutrição Funcional. O seu maior objetivo é oferecer aos  seus clientes uma forma mais saudável de viver, através de estratégias personalizadas e métodos altamente modernos e fidedignos</span>
+            <div id="content" style="padding: 40px;">
+                <span>Nutri Fernanda Amaral é graduada em Nutrição<br> Funcional. O seu maior objetivo é oferecer aos <br>  seus clientes uma forma mais saudável de viver,<br> através de estratégias personalizadas e métodos <br> altamente modernos e fidedignos</span>
             </div>
 
             <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Ol%C3%A1%20meu%20nome%20%C3%A9%20Fernanda%20Amaral." target="_blank">
@@ -79,6 +79,7 @@
         const header = document.getElementById('header');
         const width = window.innerWidth;
         const mid = document.getElementById('mid');
+        const aboutMe = document.getElementById('aboutMe');
 
         if(width <= 500) {
             header.innerHTML = ` 
@@ -113,6 +114,25 @@
                         </div>
                 </div>
                 </div>`
+
+                aboutMe.innerHTML = `<section id="aboutMe">
+                                        <div class="content"></div>
+                                        <div id="aboutText">
+                                            <div class="title">
+                                                <strong><h2>Quem é a profissional<br> Nutri Fernanda Amaral?</h2></strong>
+                                            </div>
+                                            <div id="content" style="padding: 40px;">
+                                                <span>Nutri Fernanda Amaral é graduada em Nutrição<br> Funcional. O seu maior objetivo é oferecer aos <br>  seus clientes uma forma mais saudável de viver,<br> através de estratégias personalizadas e métodos <br> altamente modernos e fidedignos</span>
+                                            </div>
+
+                                            <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Ol%C3%A1%20meu%20nome%20%C3%A9%20Fernanda%20Amaral." target="_blank">
+                                                <p>Quero marcar meu horário</p>
+                                            </a >
+                                        </div>
+                                        <div class="container">
+                                            <img src="/src/images/maefoto4.png" id="imagem">
+                                        </div>
+                                    </section>`
         }
 
         
