@@ -556,6 +556,18 @@ main {
         filter: blur(3px);
     }
 
+    .diagonal20 {
+        position: absolute;
+        top: 0;
+        left: -100%; /* Ajuste para posicionar a imagem mais para a direita */
+        width: 200%; /* Ajuste para cobrir toda a largura */
+        height: 100%;   
+        background-image: url('/src/images/maefoto8.jpg');
+        background-size: contain; 
+        z-index: -1; 
+        filter: blur(3px);
+    }
+
       #secondText p {
         color: rgb(234, 234, 234);
       }

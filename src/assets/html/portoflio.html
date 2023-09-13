@@ -147,6 +147,8 @@
         const width = window.innerWidth;
         const mid = document.getElementById('mid');
         const aboutMe = document.getElementById('aboutMe');
+        const method = document.getElementById('method');
+        const bio = document.getElementById('Bio');
 
         if(width <= 500) {
             header.innerHTML = ` 
@@ -205,6 +207,57 @@
                                             <img src="/src/images/maefoto4.png" id="imagem">
                                         </div>
                                     </section>`
+
+                method.innerHTML = `<div class="diagonal10"></div>
+                                            <div id="secondTela">
+                                                <div id="aboutText1" style="margin-right: 170px;display: flex; flex-direction: column; gap: 2rem; align-items: center; justify-content: center;">
+                                                    <div class="title">
+                                                        <strong><h2>Meu método para ajudar meus pacientes</h2></strong>
+                                                    </div>
+                                                    <div id="right">
+                                                        <div id="content" style="padding: 20px; width: 210px;">
+                                                            <span>
+                                                            Não existe uma fórmula mágica para o emagrecimento, porém
+                                                            ingerir alimentos mais saudáveis e naturais te dará resultados
+                                                            positivos! Nas consultas sempre gosto de saber qual é seu
+                                                            objetivo... Para assim te auxiliar melhor, disponibilizo um
+                                                            aplicativo para você usar, e te ajudar na sua reeducação
+                                                            alimentar/dieta.
+                                                            </span>
+                                                        </div>
+                                            
+                                                        <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Olá Dr Fernanda Amaral, Gostaria de agendar minha consulta." target="_blank">
+                                                            <p>Faça seu agendamento</p>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>`
+
+                bio.innerHTML = `
+                                    <div class="diagonal20"></div>
+                                        <div id="secondTela">
+                                            <div id="aboutText1" style="margin-right: 160px; display: flex; flex-direction: column; gap: 2rem;">
+                                                <div class="title">
+                                                    <strong><h2>Você conhece a bioimpedância?</h2></strong>
+                                                </div>
+                                                <div id="right">
+                                                    <div id="content" style="padding: 20px; width: 210px;">
+                                                        <span>
+                                                            A bioimpedância elétrica é um exame destinado à
+                                                            avaliação da composição corporal, estimando a massa
+                                                            magra, gordura corporal, água corporal total, entre
+                                                            outros dados que proporcionam informações mais
+                                                            precisas sobre o estado nutricional do paciente. Ele vai
+                                                            me ajudar a te auxiliar melhor !
+                                                        </span>
+                                                    </div>
+                                        
+                                                    <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Olá Dr Fernanda Amaral, Gostaria de agendar minha consulta." target="_blank">
+                                                        <p>Faça sua bioimpedância</p>
+                                                    </a>
+                                                </div>
+                                            </div>                                            
+                                    </div>`
         }
 
         
