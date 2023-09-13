@@ -547,7 +547,7 @@ main {
     #diagonal10 {
         position: absolute;
         top: 10;
-        left: -15%; /* Ajuste para posicionar a imagem mais para a direita */
+        left: 10%; /* Ajuste para posicionar a imagem mais para a direita */
         width: 200%; /* Ajuste para cobrir toda a largura */
         height: 100%;   
         background-image: url('/src/images/maefotoVertical.jpg');
