@@ -185,7 +185,7 @@ body {
 
 
 /* Estilo para a imagem em diagonal */
-.diagonal-image {
+#diagonal-image {
     position: absolute;
     top: 0;
     left: 5%; /* Ajuste para posicionar a imagem mais para a direita */
@@ -200,7 +200,7 @@ body {
 
 
 
-.diagonal10 {
+#diagonal10 {
     position: absolute;
     top: 0;
     left: 2.5%; /* Ajuste para posicionar a imagem mais para a direita */
@@ -213,7 +213,7 @@ body {
 }
 
 
-.diagonal20 {
+#diagonal20 {
     position: absolute;
     top: 0;
     left: 0%; /* Ajuste para posicionar a imagem mais para a direita */
@@ -535,8 +535,8 @@ main {
     #diagonal-image {
         position: absolute;
         top: 0;
-        left: -55%; /* Ajuste para posicionar a imagem mais para a direita */
-        width: 180%; /* Ajuste para cobrir toda a largura */
+        left: -50%; /* Ajuste para posicionar a imagem mais para a direita */
+        width: 200%; /* Ajuste para cobrir toda a largura */
         height: 90%;   
         background-image: url('/src/images/GS6A1971.jpg');
         background-size: contain; 
