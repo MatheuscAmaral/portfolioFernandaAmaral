@@ -536,7 +536,7 @@ main {
         position: absolute;
         top: 0;
         left: -55%; /* Ajuste para posicionar a imagem mais para a direita */
-        width: 200%; /* Ajuste para cobrir toda a largura */
+        width: 180%; /* Ajuste para cobrir toda a largura */
         height: 90%;   
         background-image: url('/src/images/GS6A1971.jpg');
         background-size: contain; 
