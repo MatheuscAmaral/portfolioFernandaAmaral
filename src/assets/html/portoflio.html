@@ -149,129 +149,124 @@
         const width = window.innerWidth;
 
         if(width <= 500) {
+            body.innerHTML = `<div id="firstTela">
+                                    <div id="diagonal-image"></div>
+                                <header id="header">
+                                    <div id="info">
+                                            <img src="/src/images/logoMae.png">
+                                    </div>    
+                                </header>
 
-            
-        }
-
-        if (width >= 800 && width < 1200) {
-
-body.innerHTML = `<div id="firstTela">
-                        <div id="diagonal-image"></div>
-                    <header id="header">
-                        <div id="info">
-                                <img src="/src/images/logoMae.png" style="width: 200px; margin-left: 330px">
-                        </div>    
-                    </header>
-
-<div id="mid">
-    <div id="mid-text">
-            <div id="firstText">
-                <h4>Nutricionista</h4>
-            </div>
-        
-            <div id="thirdRow">
-                <div id="secondText">
-                    <h1>Fernanda Amaral</h1>
-                    <strong><p>CRN - 9 5609</p></strong>
+        <div id="mid">
+                <div id="mid-text">
+                        <div id="firstText">
+                            <h4>Nutricionista</h4>
+                        </div>
+                    
+                        <div id="thirdRow">
+                            <div id="secondText">
+                                <h1>Fernanda Amaral</h1>
+                                <strong><p>CRN - 9 5609</p></strong>
+                            </div>
+                            <div id="consults">
+                                <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Olá Dr Fernanda Amaral, Gostaria de agendar minha consulta." target="_blank">
+                                <button >
+                                    <p>Quero agendar minha consulta</p>
+                                </button>
+                                 </a>
+                            <div>
+                                            
+                            <div id="icons">
+                                <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Ol%C3%A1%20meu%20nome%20%C3%A9%20Fernanda%20Amaral." target="_blank"><i class="fa-brands fa-whatsapp fa-lg" style="color: #fff;"></i></a>
+                                <a href="https://www.instagram.com/fernandaamaral.nutricionista/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #fff;"></i></a>
+                            </div>
+                        </div>
                 </div>
-                <div id="consults">
-                    <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Olá Dr Fernanda Amaral, Gostaria de agendar minha consulta." target="_blank">
-                    <button style="padding: 15px; border-radius: 8px; background-color: black; color: white; border: none; margin-bottom: 30px">
-                        <p>Quero agendar minha consulta</p>
-                    </button>
-                     </a>
-                <div>
-                                
-                <div id="icons" style="margin-left: 40px">
-                    <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Ol%C3%A1%20meu%20nome%20%C3%A9%20Fernanda%20Amaral." target="_blank"><i class="fa-brands fa-whatsapp fa-lg" style="color: #fff;"></i></a>
-                    <a href="https://www.instagram.com/fernandaamaral.nutricionista/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #fff;"></i></a>
-                </div>
-            </div>
-    </div>
-</div>
+        </div>
 
-<section id="method">
-   
-        <div id="secondTela">
-            <div id="aboutText1" style="margin-left: 300px;display: flex; flex-direction: column; gap: 2rem; align-items: center; justify-content: center;">
-                <div class="title">
-                    <strong><h2 style="margin-left: 35px">Meu método para ajudar meus pacientes</h2></strong>
-                </div>
-                <div id="right">
-                    <div id="content" style="padding: 20px; width: 210px;">
-                        <span>
-                        Não existe uma fórmula mágica para o emagrecimento, porém
-                        ingerir alimentos mais saudáveis e naturais te dará resultados
-                        positivos! Nas consultas sempre gosto de saber qual é seu
-                        objetivo... Para assim te auxiliar melhor, disponibilizo um
-                        aplicativo para você usar, e te ajudar na sua reeducação
-                        alimentar/dieta.
-                        </span>
+        <section id="methodMobile" style="margin-left: 195px; margin-top: 180px">
+               
+                    <div id="secondTela">
+                        <div id="aboutText1" style="margin-right: 170px;display: flex; flex-direction: column; gap: 2rem; align-items: center; justify-content: center;">
+                            <div class="title">
+                                <strong style="color: black"><h2 style="margin-left: 10px">Meu método para <br>ajudar meus pacientes</h2></strong>
+                            </div>
+                            <div id="right">
+                                <div id="content" style="padding: 20px; width: 210px;">
+                                    <span>
+                                    Não existe uma fórmula mágica para o emagrecimento, porém
+                                    ingerir alimentos mais saudáveis e naturais te dará resultados
+                                    positivos! Nas consultas sempre gosto de saber qual é seu
+                                    objetivo... Para assim te auxiliar melhor, disponibilizo um
+                                    aplicativo para você usar, e te ajudar na sua reeducação
+                                    alimentar/dieta.
+                                    </span>
+                                </div>
+                    
+                                <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Olá Dr Fernanda Amaral, Gostaria de agendar minha consulta." target="_blank">
+                                    <p>Faça seu agendamento</p>
+                                </a>
+                            </div>
                     </div>
+            </div>
+      </section>
+
+    
+    <section id="BioMobile">
         
-                    <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Olá Dr Fernanda Amaral, Gostaria de agendar minha consulta." target="_blank">
-                        <p>Faça seu agendamento</p>
-                    </a>
-                </div>
+            <div id="secondTela" style="margin-left: 200px; margin-top: 200px; margin-bottom: 100px;">
+                <div id="aboutText1" style="margin-right: 180px; display: flex; flex-direction: column; gap: 2rem;">
+                    <div class="title">
+                        <strong style="color: black"><h2 style="margin-left: 35px">Você conhece a bioimpedância?</h2></strong>
+                    </div>
+                    <div id="right">
+                        <div id="content" style="padding: 20px; width: 210px;">
+                            <span>
+                                A bioimpedância elétrica é um exame destinado à
+                                avaliação da composição corporal, estimando a massa
+                                magra, gordura corporal, água corporal total, entre
+                                outros dados que proporcionam informações mais
+                                precisas sobre o estado nutricional do paciente. Ele vai
+                                me ajudar a te auxiliar melhor !
+                            </span>
+                        </div>
+            
+                        <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Olá Dr Fernanda Amaral, Gostaria de agendar minha consulta." target="_blank">
+                            <p>Faça sua bioimpedância</p>
+                        </a>
+                    </div>
+                </div>                                            
         </div>
-</div>
-</section>
+    </section>
 
-
-<section id="Bio">
-
-<div id="secondTela">
-    <div id="aboutText1" style="margin-left: 300px; display: flex; flex-direction: column; gap: 2rem;">
-        <div class="title">
-            <strong><h2 style="margin-left: 35px">Você conhece a bioimpedância?</h2></strong>
-        </div>
-        <div id="right">
-            <div id="content" style="padding: 20px; width: 210px;">
-                <span>
-                    A bioimpedância elétrica é um exame destinado à
-                    avaliação da composição corporal, estimando a massa
-                    magra, gordura corporal, água corporal total, entre
-                    outros dados que proporcionam informações mais
-                    precisas sobre o estado nutricional do paciente. Ele vai
-                    me ajudar a te auxiliar melhor !
-                </span>
+    <section id="aboutMeMobile" style="margin-top: 200px; margin-bottom: 100px; display: flex; flex-direction: column; gap: 4rem">
+        <div class="container">
+                <img src="/src/images/maefoto4.png" id="imagem" style="margin-left: 220px; width: 200px">
             </div>
 
-            <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Olá Dr Fernanda Amaral, Gostaria de agendar minha consulta." target="_blank">
-                <p>Faça sua bioimpedância</p>
-            </a>
-        </div>
-    </div>                                            
-</div>
-</section>
+            <div id="aboutText">
+                <div class="title">
+                    <strong style="color: black;"><h4>Quem é a profissional<br> Nutri Fernanda Amaral?</h4></strong>
+                </div>
+                <div id="content" style="padding: 20px; width: 210px;">
+                    <span> 
+                        Meu nome e Fernanda, trabalho como
+                        nutricionista a mais de 30 anos ajudando
+                        as pessoas terem uma vida mais saudável
+                        e equilibrada!
+                    </span>
+                </div>
 
-<section id="aboutMe">
-<div class="content"></div>
-<div id="aboutText">
-    <div class="title">
-        <strong><h4>Quem é a profissional<br> Nutri Fernanda Amaral?</h4></strong>
-    </div>
-    <div id="content">
-        <span> 
-            Meu nome e Fernanda, trabalho como
-            nutricionista a mais de 30 anos ajudando
-            as pessoas terem uma vida mais saudável
-            e equilibrada!
-        </span>
-    </div>
-
-    <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Ol%C3%A1%20meu%20nome%20%C3%A9%20Fernanda%20Amaral." target="_blank">
-        <p>Quero marcar meu horário</p>
-    </a>
-</div>
-<div class="container">
-    <img src="/src/images/maefoto4.png" id="imagem">
-</div>
-</section>
+                <a href="https://api.whatsapp.com/send?phone=5531991471832&text=Ol%C3%A1%20meu%20nome%20%C3%A9%20Fernanda%20Amaral." target="_blank">
+                    <p>Quero marcar meu horário</p>
+                </a>
+            </div>
+    </section>
 
 `
+    
+        }
 
-}
         
         
     </script>
