@@ -12,6 +12,8 @@ body {
     
 }
 
+
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -821,6 +823,10 @@ main {
         background-size: cover; 
         z-index: -1; 
         filter: blur(3px);
+    }
+
+    #mediaPc {
+        display: none;
     }
 }
 
