@@ -12,6 +12,10 @@ body {
     
 }
 
+/* styles.css */
+html {
+    scroll-behavior: smooth;
+}
 
 
 
@@ -32,6 +36,7 @@ body {
     justify-content: center;
     padding: 350px;
     backdrop-filter: blur(10px); 
+
 }
 
 #method {
@@ -40,6 +45,7 @@ body {
     justify-content: center;
     padding: 300px;
     backdrop-filter: blur(10px); 
+
 }
 
 #Bio {
